@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
+@Setter
 public class Locker {
     private String id;
     private LockerStatus lockerStatus;

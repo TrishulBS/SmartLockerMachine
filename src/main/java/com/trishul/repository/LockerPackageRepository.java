@@ -10,7 +10,7 @@ public class LockerPackageRepository {
     public static List<LockerPackage> lockerPackages = new ArrayList<>();
 
 
-    public Optional<LockerPackage> getLockerByLockerId(String id) {
+    public static Optional<LockerPackage> getLockerByLockerId(String id) {
         return lockerPackages.stream().filter(lp -> lp.getLockerId().equals(id)).findFirst();
     }
 }
